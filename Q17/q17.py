@@ -9,19 +9,15 @@ def my_division(numerator, denominator):
     divisor_size = 1
     count = 0
     while numerator >= denominator:
-        if numerator > divisor:
+        if numerator >= divisor:
             numerator -= divisor
             count += divisor_size
             # Double divisor
-            divisor << 1
-            divisor_size << 1
-        else:
-            if numerator < divisor:
-                # Halve divisor
-                divisor >> 1
-                divisor_size >> 1
-
-            numerator -= divisor
-            count += divisor_size
+            divisor <<= 1
+            divisor_size <<= 1
+        elif numerator < divisor:
+            # Halve divisor
+            divisor >>= 1
+            divisor_size >>= 1
 
     return count
