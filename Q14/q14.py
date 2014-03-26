@@ -1,7 +1,7 @@
 # coding=utf-8
 
 
-def make_change(currency, amount, minimum=0):
+def make_change(currency, amount):
     if amount == 0:
         return []
 
@@ -14,7 +14,5 @@ def make_change(currency, amount, minimum=0):
             sub_options = make_change(currency[i:], amount - coin)
             for sub_opt in sub_options:
                 options.append((coin,) + sub_opt)
-
-    options.sort()
 
     return options
