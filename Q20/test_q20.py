@@ -1,8 +1,9 @@
+# coding=utf-8
 import unittest
 from q20 import search_2d_sorted
 
 
-class Search2DSortedTests(unittest.TestCase):
+class Q20Tests(unittest.TestCase):
     def test_simple_there(self):
         self.assertEqual(
             search_2d_sorted([[1]], 1),

@@ -1,3 +1,6 @@
+# coding=utf-8
+
+
 def search_2d_sorted(grid, value):
     y = 0
     x = len(grid[0]) - 1

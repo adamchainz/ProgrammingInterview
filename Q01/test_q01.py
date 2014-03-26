@@ -1,10 +1,10 @@
 # coding=utf-8
 import unittest
 
-from q1 import LinkedListNode
+from q01 import LinkedListNode
 
 
-class Q1Tests(unittest.TestCase):
+class Q01Tests(unittest.TestCase):
     def test_example(self):
         self.assertListEqual(
             LinkedListNode.from_list([1, 2, 3]).reverse().to_list(),

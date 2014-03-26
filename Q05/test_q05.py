@@ -4,7 +4,7 @@ import unittest
 from q05 import to_rational
 
 
-class Q5Tests(unittest.TestCase):
+class Q05Tests(unittest.TestCase):
     def test_between_zero_and_one(self):
         self.assertEqual(to_rational(0.125), '1/8')
 

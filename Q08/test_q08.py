@@ -1,8 +1,9 @@
+# coding=utf-8
 import unittest
 from q08 import TreeNode, validate_is_search_tree
 
 
-class ValidateTests(unittest.TestCase):
+class Q08Tests(unittest.TestCase):
     def test_simple_yes(self):
         self.assertTrue(validate_is_search_tree(
             TreeNode(5)

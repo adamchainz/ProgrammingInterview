@@ -1,10 +1,10 @@
 # coding=utf-8
 import unittest
 
-from q3 import count_in_sorted
+from q03 import count_in_sorted
 
 
-class Q3Tests(unittest.TestCase):
+class Q03Tests(unittest.TestCase):
     def test_empty(self):
         self.assertEqual(count_in_sorted(2, []), 0)
 

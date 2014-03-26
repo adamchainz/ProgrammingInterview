@@ -1,3 +1,4 @@
+# coding=utf-8
 import unittest
 
 from q09 import TreeNode, nodes_at_depth

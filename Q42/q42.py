@@ -1,3 +1,6 @@
+# coding=utf-8
+
+
 def subsets(elements, k):
     results = set()
     for i in range(2 ** len(elements)):

@@ -1,3 +1,6 @@
+# coding=utf-8
+
+
 class TreeNode(object):
     def __init__(self, value, left=None, right=None):
         self.value = value

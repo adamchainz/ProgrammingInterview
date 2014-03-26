@@ -1,8 +1,9 @@
+# coding=utf-8
 import unittest
 from q42 import subsets
 
 
-class SubsetsTests(unittest.TestCase):
+class Q42Tests(unittest.TestCase):
     def test_zero(self):
         self.assertSetEqual(
             subsets([1], 0),

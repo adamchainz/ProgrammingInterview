@@ -4,7 +4,7 @@ import unittest
 from q07 import first_index
 
 
-class Q7Tests(unittest.TestCase):
+class Q07Tests(unittest.TestCase):
     def test_no_duplicates(self):
         self.assertEqual(first_index([1, 2, 3, 4, 5, 6, 7, 8, 9], 3), 2)
 

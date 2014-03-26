@@ -5,7 +5,7 @@ import itertools
 from q06 import permutations
 
 
-class Q6Tests(unittest.TestCase):
+class Q06Tests(unittest.TestCase):
     def test_length_one(self):
         self.assertEqual(permutations('1'), ['1'])
 

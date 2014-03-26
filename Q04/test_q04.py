@@ -1,8 +1,9 @@
+# coding=utf-8
 import unittest
 from q04 import parens_sets
 
 
-class ParensSetsTests(unittest.TestCase):
+class Q04Tests(unittest.TestCase):
     def test_zero(self):
         self.assertSetEqual(parens_sets(0), set())
 
