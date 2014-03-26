@@ -5,7 +5,7 @@ def max_rect(histogram):
     rect_stack = []
     max_found = float('-inf')
 
-    for i in xrange(len(histogram) + 1):
+    for i in range(len(histogram) + 1):
         while len(rect_stack):
             if i < len(histogram) and histogram[i] >= rect_stack[-1][1]:
                 break

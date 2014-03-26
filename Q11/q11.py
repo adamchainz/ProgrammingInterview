@@ -3,7 +3,7 @@
 
 def subsets(elements):
     results = set()
-    for i in xrange(2 ** len(elements)):
+    for i in range(2 ** len(elements)):
         binrep = bin(i)[2:]
         result = []
         for i, b in enumerate(reversed(binrep)):

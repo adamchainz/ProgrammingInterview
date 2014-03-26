@@ -7,8 +7,8 @@ def is_rotated_palindrome(string):
 
     index = lambda n: (n + len(string)) % len(string)
 
-    for i in xrange(len(string)):
-        for j in xrange(1, (len(string) / 2) + 1):
+    for i in range(len(string)):
+        for j in range(1, (len(string) // 2) + 1):
             if string[index(i + j)] != string[index(i - j)]:
                 break
             return True

@@ -10,7 +10,7 @@ def first_index(numbers, value, start=None, end=None):
     if value < numbers[start] or value > numbers[end]:
         return None
 
-    midpoint = (start + end) / 2
+    midpoint = (start + end) // 2
     if numbers[midpoint] > value or (midpoint - 1 >= 0 and
                                      numbers[midpoint - 1] == value):
         return first_index(numbers, value, start, midpoint - 1)

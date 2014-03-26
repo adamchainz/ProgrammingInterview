@@ -7,7 +7,7 @@ def permutations(string, index=0):
 
     results = permutations(string, index + 1)  # With no swapping
 
-    for swap_index in xrange(index + 1, len(string)):
+    for swap_index in range(index + 1, len(string)):
         swapped_string = (
             string[:index] +
             string[swap_index] +

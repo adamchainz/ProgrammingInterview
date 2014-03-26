@@ -32,7 +32,7 @@ class Q23Tests(unittest.TestCase):
     def test_giant(self):
         self.assertEqual(
             maximal_submatrix_sum([range(99), range(-99, 0)]),
-            sum(xrange(99))
+            sum(range(99))
         )
 
 

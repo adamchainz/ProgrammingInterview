@@ -31,7 +31,7 @@ def binarysearch(item, search):
     elif len(search) == 1:
         return 0 if search[0] == item else None
 
-    midpoint = len(search) / 2
+    midpoint = len(search) // 2
 
     if search[midpoint] == item:
         return midpoint

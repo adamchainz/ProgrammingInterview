@@ -18,7 +18,7 @@ def longest_increasing_subs(array):
 
 def increasing_subs(array):
     end = 0
-    for i in xrange(1, len(array)):
+    for i in range(1, len(array)):
         if array[i] > array[i - 1]:
             end = i
         else:

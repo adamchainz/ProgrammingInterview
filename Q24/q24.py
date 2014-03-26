@@ -13,7 +13,7 @@ def balance_point(array):
         return None
 
     left_total = 0
-    for i in xrange(len(array)):
+    for i in range(len(array)):
         right_total = total - left_total - array[i]
         if right_total == left_total:
             return i
