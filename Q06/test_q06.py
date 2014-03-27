@@ -25,7 +25,7 @@ class Q06Tests(unittest.TestCase):
         )
 
     def test_really_long(self):
-        self.assertSetEqual(
+        self.assertEqual(
             set(permutations('ABCDEFGH')),
             set([''.join(p) for p in itertools.permutations('ABCDEFGH')])
         )

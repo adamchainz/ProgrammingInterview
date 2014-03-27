@@ -7,7 +7,7 @@ from q47 import TreeNode
 class Q47Tests(unittest.TestCase):
     def test_root_only(self):
         node = TreeNode(77)
-        self.assertListEqual(node.postorder_traversal(), [77])
+        self.assertEqual(node.postorder_traversal(), [77])
 
     def test_example(self):
         root = TreeNode(
@@ -18,7 +18,7 @@ class Q47Tests(unittest.TestCase):
                 left=TreeNode(2)
             )
         )
-        self.assertListEqual(
+        self.assertEqual(
             root.postorder_traversal(),
             ['a', 2, 7, 4]
         )
@@ -37,7 +37,7 @@ class Q47Tests(unittest.TestCase):
                 right=TreeNode(5)
             )
         )
-        self.assertListEqual(
+        self.assertEqual(
             root.postorder_traversal(),
             [4, 2, 8, 6, 5, 7, 9]
         )
