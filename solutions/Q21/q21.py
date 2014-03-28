@@ -8,7 +8,6 @@ class ContrivedQueue(object):
         # just pretend they're stacks.
         self._head = []
         self._tail = []
-        self._which = 'a'
 
     def enqueue(self, val):
         self._tail.append(val)
