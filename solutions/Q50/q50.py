@@ -6,15 +6,13 @@ class CircularListNode(object):
         self.value = value
         self.next = self
 
-    def list(self):
-        list = []
-        current = self                
-        head = False
-        while not head:
-            list.append(current.value)
+    def as_list(self):
+        values = [self.value]
+        current = self.next
+        while (current != self):
+            values.append(current.value)
             current = current.next
-            head = current == self
-        return list
+        return values
 
 
 def insert(head, n):
