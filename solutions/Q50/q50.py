@@ -6,30 +6,47 @@ class CircularListNode(object):
         self.value = value
         self.next = self
 
-    def as_list(self):
-        values = [self.value]
-        current = self.next
-        while (current != self):
+
+class CircularList(object):
+    def __init__(self, values=None):
+        self.head = None
+
+        if values is not None:
+            for value in values:
+                self.insert(value)
+
+    def insert(self, new_value):
+        head = self.head
+        new = CircularListNode(new_value)
+
+        if self.head is None:  # Zero element list
+            self.head = new
+        elif new_value < head.value:
+            current = head
+            while current.next != head:
+                current = current.next
+
+            current.next = new
+            new.next = head
+            self.head = new
+        else:
+            current = head
+            while current.next != head and current.next.value <= new_value:
+                current = current.next
+
+            new.next = current.next
+            current.next = new
+
+    def values(self):
+        values = []
+
+        current = self.head
+        while current is not None:
             values.append(current.value)
+
             current = current.next
+            if current is self.head:
+                break
+
         return values
 
-
-def insert(head, n):
-    if head is None:
-        return CircularListNode(n)
-    elif head.next == head:
-        (head.next, head.next.next) = (CircularListNode(n), head)
-        return head.value < n and head or head.next
-    elif n < head.value:
-        current = head
-        while current.next != head:
-            current = current.next
-        (current.next, current.next.next) = (CircularListNode(n), head)
-        return current.next
-
-    current = head
-    while current.next != head and current.next.value <= n:
-        current = current.next
-    (current.next, current.next.next) = (CircularListNode(n), current.next)
-    return head
