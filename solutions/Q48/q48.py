@@ -5,7 +5,7 @@ def max_subsequent_product(numbers):
     """
     Assumes that the given list has a subsequence with product greater than 1
     """
-    max = 1
+    biggest = 1
     curr_pos = 1
     curr_neg = 1
     for number in numbers:
@@ -23,7 +23,7 @@ def max_subsequent_product(numbers):
             curr_pos = 1
             curr_neg = 1
 
-        if curr_pos > max:
-            max = curr_pos
+        if curr_pos > biggest:
+            biggest = curr_pos
 
-    return max
+    return biggest
