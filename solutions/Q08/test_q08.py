@@ -10,7 +10,7 @@ class Q08Tests(unittest.TestCase):
         ))
 
     def test_simple_no(self):
-        self.assertTrue(validate_is_search_tree(
+        self.assertFalse(validate_is_search_tree(
             TreeNode(
                 5,
                 left=TreeNode(8)
